@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de Plantas - WTP</title>
+    <link rel="stylesheet" href="identificar.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="titulo">Identificar Plantas!</h1>
+        <p class="subtitulo">Escolha um arquivo ou tire uma foto da planta que deseja identificar.</p>
+
+        <div class="input-container">
+            <label class="custom-file-upload">
+                Escolher Arquivo
+                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+            </label>
+
+            <div class="camera-container">
+                <button class="btn" onclick="startCamera()">Tirar Foto</button>
+                <video id="video" autoplay></video>
+                <button class="btn" id="captureBtn" style="display:none;" onclick="capturePhoto()">Capturar</button>
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+
+        <div id="loading" style="display:none; margin-top: 20px;">Carregando identificação...</div>
+        <div id="result"></div>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="inicio.html" class="active"><img src="imagens/Home.png" alt="Início"></a>
+        <a href="pesquisar.html"><img src="imagens/search.png" alt="Pesquisar"></a>
+        <a href="equipe.html"><img src="imagens/person.png" alt="Equipe"></a>
+    </nav>
+
+    <script src="identificar.js"></script>
+</body>
+</html>

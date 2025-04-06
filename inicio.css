@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1b301b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #121212;
+    width: 360px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.plant-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.plant-item {
+    display: flex;
+    align-items: center;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.plant-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.plant-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.plant-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.logout-btn {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2e7d32;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.bottom-nav .active {
+    font-weight: bold;
+}

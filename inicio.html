@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - WTP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> 
+        <h1 class="titulo" id="boasVindas"></h1>
+        <p class="subtitulo">Qual planta gostaria de conhecer?</p>
+        <div class="plant-list">
+            <a href="plantas/babosa.html" class="plant-item">
+                <img src="imagens/babosa.jpg" alt="Babosa">
+                <div class="plant-info">
+                    <h3>Babosa</h3>
+                    <p>Aloe Vera</p>
+                </div>
+            </a>
+            <a href="plantas/boldo.html" class="plant-item">
+                <img src="imagens/boldo.jpg" alt="Boldo">
+                <div class="plant-info">
+                    <h3>Boldo</h3>
+                    <p>Peumus boldus</p>
+                </div>
+            </a>
+            <a href="plantas/goiaba.html" class="plant-item">
+                <img src="imagens/goiabeira.jpg" alt="Goiabeira">
+                <div class="plant-info">
+                    <h3>Goiabeira</h3>
+                    <p>Psidium guajava</p>
+                </div>
+            </a>
+
+            <a href="plantas/hortela.html" class="plant-item">
+                <img src="imagens/hortela.jpg" alt="Hortelã">
+                <div class="plant-info">
+                    <h3>Hortelã</h3>
+                    <p>Mentha spicata</p>
+                </div>
+            </a>
+
+            <a href="plantas/ora.html" class="plant-item">
+                <img src="imagens/ora-pro-nobis.jpg" alt="Ora-pro-Nóbis">
+                <div class="plant-info">
+                    <h3>Ora-pro-Nóbis</h3>
+                    <p>Pereskia aculeata</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="pesquisar.html"><img src="imagens/search.png" alt="Pesquisar"></a>
+        <a href="identificar.html"><img src="imagens/camera.png" alt="Identificar"></a>
+        <a href="equipe.html"><img src="imagens/person.png" alt="Equipe"></a>
+    </nav>
+    <script>
+        const nomeUsuario = localStorage.getItem("usuarioNome");
+        if (nomeUsuario) {
+            document.getElementById("boasVindas").textContent = `Olá, ${nomeUsuario}!`;
+        }
+    </script>
+    
+</body>
+</html>

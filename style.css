@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #18321f;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+.titulo {
+        text-align: left;
+        margin-left: 20px;
+        font-size: 24px;
+        font-weight: bold;
+}
+    
+.subtitulo {
+        text-align: left;
+        margin-left: 20px;
+        font-size: 18px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+}
+
+.plant-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.plant-item {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    border-radius: 12px;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+}
+.plant-item:hover {
+    transform: scale(1.05);
+}
+.plant-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.plant-info {
+    flex: 1;
+}
+
+.plant-info h3 {
+    font-size: 16px;
+    margin: 0;
+    color: white;
+}
+
+.plant-info p {
+    font-size: 12px;
+    margin: 2px 0 0;
+    color: #ccc;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #116530;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-radius: 12px;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.bottom-nav img {
+    width: 24px;
+    height: 24px;
+}
